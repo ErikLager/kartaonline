@@ -88,13 +88,13 @@
                 trackUserLocation: true,
                 // Draw an arrow next to the location dot to indicate which direction the device is heading.
                 showUserHeading: true,
-                showAccuracyCircle: false
+                showAccuracyCircle: true
             })
         );
 
-        mapboxMap.getTrackingSettings().setMyLocationTrackingMode(MyLocationTracking.TRACKING_FOLLOW);
+        map.getTrackingSettings().setMyLocationTrackingMode(MyLocationTracking.TRACKING_FOLLOW);
 
-        mapboxMap.getTrackingSettings().setMyBearingTrackingMode(MyBearingTracking.COMPASS);
+        map.getTrackingSettings().setMyBearingTrackingMode(MyBearingTracking.COMPASS);
     </script>
 </body>
 
