@@ -35,44 +35,44 @@
         const map = new mapboxgl.Map({
             "container": "map",
             style: 'mapbox://styles/mapbox/streets-v11',
-            "style": {
-                "version": 8,
-                "sources": {
-                    "osm-tiles": {
-                        "type": "raster",
-                        "tiles": [
-                            'http://a.tile.osm.org/{z}/{x}/{y}.png',
-                            'http://b.tile.osm.org/{z}/{x}/{y}.png',
-                            'http://c.tile.osm.org/{z}/{x}/{y}.png'
-                        ],
-                        "tileSize": 256
-                    },
-                    "my-tiles": {
-                        "type": "raster",
-                        "scheme": "tms",
-                        "tiles": [
-                            "./akaslompolo/{z}/{x}/{y}.png"
-                        ],
-                        "tileSize": 256
-                    },
-                },
-                "layers": [
-                    {
-                        "id": "oms-tiles-layer",
-                        "type": "raster",
-                        "source": "osm-tiles",
-                        "minzoom": 0,
-                        "maxzoom": 20
-                    },
-                    {
-                        "id": "my-tiles-layer",
-                        "type": "raster",
-                        "source": "my-tiles",
-                        "minzoom": 0,
-                        "maxzoom": 18
-                    },
-                ]
-            },
+            // "style": {
+            //     "version": 8,
+            //     "sources": {
+            //         "osm-tiles": {
+            //             "type": "raster",
+            //             "tiles": [
+            //                 'http://a.tile.osm.org/{z}/{x}/{y}.png',
+            //                 'http://b.tile.osm.org/{z}/{x}/{y}.png',
+            //                 'http://c.tile.osm.org/{z}/{x}/{y}.png'
+            //             ],
+            //             "tileSize": 256
+            //         },
+            //         "my-tiles": {
+            //             "type": "raster",
+            //             "scheme": "tms",
+            //             "tiles": [
+            //                 "./akaslompolo/{z}/{x}/{y}.png"
+            //             ],
+            //             "tileSize": 256
+            //         },
+            //     },
+            //     "layers": [
+            //         {
+            //             "id": "oms-tiles-layer",
+            //             "type": "raster",
+            //             "source": "osm-tiles",
+            //             "minzoom": 0,
+            //             "maxzoom": 20
+            //         },
+            //         {
+            //             "id": "my-tiles-layer",
+            //             "type": "raster",
+            //             "source": "my-tiles",
+            //             "minzoom": 0,
+            //             "maxzoom": 18
+            //         },
+            //     ]
+            // },
             center: [15.58127, 56.17286],
             // ENABLE AGAIN
             // hash: true,
